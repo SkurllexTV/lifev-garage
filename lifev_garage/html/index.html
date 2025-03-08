@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+    <title>by cscripts</title>
+</head>
+<body>
+    <div class="main__container">
+        <div class="main__content">
+            <div class="main__ui-container">
+                <div class="main__header">
+                    <p>LifeV Roleplay</p>
+                    <div class="main__bottom-header-box">
+                        <p>Garage</p>
+                    </div>
+                </div>
+                <div class="main__content-container">
+                    <div class="main__top-content">
+                        <div class="main__top-left-content">
+                            <div class="main__search-bar">
+                                <div class="main__search-bar-icon">
+                                    <img src="img/search.png" alt="">
+                                </div>
+                                <div class="main__search-bar-input">
+                                    <input type="text" id="input" placeholder="suchen" oninput="search(this)">
+                                </div>
+                            </div>
+                            <div class="main__fav-container" onClick="filterFav(this)">
+                                <img src="img/star.png" alt="" id="star">
+                            </div>
+                        </div>
+                        
+                        <div class="main__top-right-content">
+                            <div class="main__top-right-button parking" onClick="enable(true)">
+                                <p>Einparken</p>
+                            </div>
+                            <div class="main__top-right-button parkout" onClick="enable(false)">
+                                <p>Ausparken</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="main__scroll-item-container">
+                    </div>
+
+                    <div class="main__close-button" onClick="exit()">
+                        <div class="main__close-button-grid">
+                            <div class="main__close-button-icon-container">
+                                <img src="img/logout.png" alt="">
+                            </div>
+                            <div class="main__close-button-text">
+                                <p>Verlassen</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="js/script.js"></script>
+</html>
